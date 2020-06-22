@@ -1,6 +1,7 @@
-#version 1.3.0
+#version 2.0.0
 import time
 import datetime
+import webbrowser
 print("procrasti-NATOR 2020")
 print("created by -frroossst 02:14 31 May 2020")
 time.sleep(1)
@@ -41,20 +42,8 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
             print("Total number of avoidable distraction =",avoid,"of",pro)
         elif ch == '/man':
             pro-=1
-            print('procrasti-NATOR 2020 MANUAL')
-            errid=input("Enter error code :")
-            if errid =='0.0.1':
-                print()
-                print("id = 0.0.1")
-                print("type = null error")
-                print("source = pro=0 && avoid=0")
-                print("soln = rerun the program with pro!=0 and/or avoid!=0")
-            elif errid =='0.0.2':
-                print()
-                print("id = 0.0.2")
-                print("type = underflow error")
-                print("source = break time value entered is negative")
-                print("soln = enter a value of break timing >0")
+            man=open("/home/home/Desktop/flow_state/manual.html","r")
+            webbrowser.open_new_tab('manual.html')
         elif ch == '/log':
             pro-=1
             n=1
