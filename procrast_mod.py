@@ -23,10 +23,10 @@ time.sleep(0.5)
 now=datetime.datetime.now()
 dist_timings=[]
 break_timings=[]
-avoid=pro=br=br_total=br_timez=0
+avoid=pro=br=br_total=br_timez=pomo_count=0
 ch = '/begin'
 print("start time =",now)
-while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/log':
+while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/log' or ch=='/pomodoro':
     print("Did you find your mind wander off?")
     pro_check = input()
     if pro_check == 'y' or pro_check == 'Y':
@@ -84,6 +84,17 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
                 br+=1
                 print("total number of breaks =",br)
                 br_total+=br_time 
+        elif ch == '/pomodoro':
+            pro-=1
+            print("pomodoro set for 25 minutes")
+            pomo_count+=1
+            pomo_timer=25*60            
+            time.sleep(pomo_timer)
+            print("pomodoro session completed")
+            if pomo_count%4 == 0:
+                print()
+                print("pomodoro sessions completed =",pomo_count)
+                print("you deserve a break")            
     elif pro==0 and avoid==0:
         print("NULL ERROR")
         print("ERROR CODE : 0.0.1 | Refer the manual for debug")
@@ -94,7 +105,8 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
         print('unavoidable distractions =',pro-avoid)
         print('distraction quotient =',(avoid/pro)*100,'%')
         print('total breaks =',br)
-        print('total time spent in breaks =',br_total,'minute(s)')        
+        print('total time spent in breaks =',br_total,'minute(s)')  
+        print('total pomodoro sessions =',pomo_count)      
         later=datetime.datetime.now()
         print('end time =',later)        
         ch = 'n'
