@@ -1,4 +1,4 @@
-#version 1.2.2
+#version 1.3.0
 import time
 import datetime
 print("procrasti-NATOR 2020")
@@ -13,6 +13,8 @@ time.sleep(0.1)
 print("/cont - to continue the program")
 time.sleep(0.1)
 print("/avoid - to count avoidable distractions")
+time.sleep(0.1)
+print("/pomodoro - to initiate 25x4 pomodoro timer")
 time.sleep(0.1)
 print("/man - to view the manual")
 time.sleep(0.1)
