@@ -2,6 +2,12 @@
 import time
 import datetime
 import webbrowser
+import logging
+import codecs
+#filemode='w' for overwriting and erase for continued logs
+log_format = "%(asctime)s::%(levelname)s::%(name)s::"\
+"%(filename)s::%(lineno)d::%(message)s"
+logging.basicConfig(filename='/home/home/Desktop/flow_state/logfile.log' , level='DEBUG', format=log_format,filemode='w')
 print("procrasti-NATOR 2020")
 print("created by -frroossst 02:14 31 May 2020")
 time.sleep(1)
@@ -18,8 +24,8 @@ time.sleep(0.1)
 print("/pomodoro - to initiate 25x4 pomodoro timer")
 time.sleep(0.1)
 print("/man - to view the manual")
-time.sleep(0.1)
-print("/log - to view the distraction log")
+'''time.sleep(0.1)
+print("/log - to view the distraction log")'''
 time.sleep(0.1)
 print("/break - to take a break")
 time.sleep(0.5)
@@ -34,34 +40,20 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
     pro_check = input()
     if pro_check == 'y' or pro_check == 'Y':
         pro += 1
+        logging.debug("Continued Distraction")
         dist_timings.append(datetime.datetime.now())
         print("Total number of times you've been distracted this session :", pro)
         ch = input("command :")
         if ch == '/avoid':
+            logging.debug("Avoidable distraction")
             avoid+=1
             print("Total number of avoidable distraction =",avoid,"of",pro)
         elif ch == '/man':
             pro-=1
             man=open("/home/home/Desktop/flow_state/manual.html","r")
             webbrowser.open_new_tab('manual.html')
-        elif ch == '/log':
-            pro-=1
-            n=1
-            print()
-            print("---distracrions---")
-            for i in dist_timings:
-                print()
-                print('number',n,'distraction at',i)
-                n+=1
-            '''add 1st 2nd 3rd rather than number'''
-            m=1
-            print()
-            print("---breaks---")
-            for j in break_timings:
-                print()
-                print('number',m,'break at',j)
-                m+=1
         elif ch == '/break':
+            logging.debug("Break")
             break_timings.append(datetime.datetime.now())
             pro-=1
             br_time=int(input("Enter break duration (in minutes) :"))
@@ -75,7 +67,12 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
                 br+=1
                 print("total number of breaks =",br)
                 br_total+=br_time 
+        '''elif ch=='/log':
+            logging.debug("Opened log")
+            with codecs.open("/home/home/Desktop/flow_state/logfile.log",encoding="utf8") as infile:
+                lines=infile.readlines()'''
         elif ch == '/pomodoro':
+            logging.debug("pomodoro init")
             pro-=1
             print("pomodoro set for 25 minutes")
             pomo_count+=1
@@ -91,6 +88,7 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
         print("ERROR CODE : 0.0.1 | Refer the manual for debug")
         break
     else:
+        logging.debug("program end")
         print('total distractions =', pro)
         print('avoidable distractions =',avoid)
         print('unavoidable distractions =',pro-avoid)
@@ -101,8 +99,8 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
         later=datetime.datetime.now()
         print('end time =',later)        
         ch = 'n'
-'''x.y.z 
+"""x.y.z 
 x= major changes
 y= new features/additions
-z= minor bug fixes'''
+z= minor bug fixes"""
 """YES I DO REALIZE IT IS A DISTRACTION TRACKER RATHER THAN PROCRASTINATION TRACKER UGH!""" 
