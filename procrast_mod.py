@@ -1,6 +1,8 @@
 #version 1.2.2
 import time
 import datetime
+import logging
+logging.basicConfig(filename = 'test.log',level=logging.INFO)
 print("procrasti-NATOR 2020")
 print("created by -frroossst 02:14 31 May 2020")
 time.sleep(1)
@@ -56,19 +58,19 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
         elif ch == '/log':
             pro-=1
             n=1
-            print()
-            print("---distracrions---")
+            #print()
+            logging.info("---distracrions---")
             for i in dist_timings:
-                print()
-                print('number',n,'distraction at',i)
+                #print()
+                logging.info('number',n,'distraction at',i)
                 n+=1
             '''add 1st 2nd 3rd rather than number'''
             m=1
-            print()
-            print("---breaks---")
+            #print()
+            logging.info("---breaks---")
             for j in break_timings:
-                print()
-                print('number',m,'break at',j)
+                #print()
+                logging.info('number',m,'break at',j)
                 m+=1
         elif ch == '/break':
             break_timings.append(datetime.datetime.now())
