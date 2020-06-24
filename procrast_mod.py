@@ -1,4 +1,4 @@
-#version 2.2.0
+#version 2.2.1
 import time
 import datetime
 import webbrowser
@@ -87,7 +87,7 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
                 print("pomodoro sessions completed =",pomo_count)
                 print("you deserve a break") 
         elif ch == '/concentrator':
-            pro-=1
+            pro-=1s
             print("1. assassin's creed iv black flag")
             print("2. assassin's creed ii")
             print("3. assassin's creed odyssey")
