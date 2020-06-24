@@ -1,4 +1,4 @@
-#version 2.2.1
+#version 2.2.2
 import time
 import datetime
 import webbrowser
@@ -87,16 +87,20 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
                 print("pomodoro sessions completed =",pomo_count)
                 print("you deserve a break") 
         elif ch == '/concentrator':
+            logging.debug("/concentrator")            
             pro-=1s
             print("1. assassin's creed iv black flag")
             print("2. assassin's creed ii")
             print("3. assassin's creed odyssey")
             vid_choice=int(input())
             if vid_choice == 1:
+                logging.debug("vid_choice = 1")
                 webbrowser.open_new("https://www.youtube.com/watch?v=JYVMnLUZu9Y&t=1320s")
             elif vid_choice == 2:
+                logging.debug("vid_choice = 2")
                 webbrowser.open_new("https://www.youtube.com/watch?v=iriiZOeInDg&t=5415s")
             elif vid_choice == 3:
+                logger.debug("vid_choice = 3")
                 webbrowser.open_new("https://www.youtube.com/watch?v=fwthw9Sy_RU")
             else:
                 logging.debug("invalid video choice")
