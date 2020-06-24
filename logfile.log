@@ -24,3 +24,10 @@
 2020-06-24 15:51:26,738::DEBUG::root::procrast_mod.py::45::/cont
 2020-06-24 15:51:32,423::DEBUG::root::procrast_mod.py::90::/concentrator
 2020-06-24 15:51:34,877::DEBUG::root::procrast_mod.py::100::vid_choice = 2
+2020-06-24 17:55:03,542::DEBUG::root::procrast_mod.py::12::---START---
+2020-06-24 18:08:11,776::DEBUG::root::procrast_mod.py::45::/cont
+2020-06-24 18:08:14,104::DEBUG::root::procrast_mod.py::58::/break
+2020-06-24 18:08:16,160::DEBUG::root::procrast_mod.py::68::break start
+2020-06-24 18:13:16,259::DEBUG::root::procrast_mod.py::74::break end
+2020-06-24 18:38:14,326::DEBUG::root::procrast_mod.py::12::---START---
+2020-06-24 18:48:50,769::ERROR::root::procrast_mod.py::109::0.0.1
