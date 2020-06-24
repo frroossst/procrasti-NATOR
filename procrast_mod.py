@@ -1,4 +1,4 @@
-#version 2.1.2
+#version 2.1.3
 import time
 import datetime
 import webbrowser
@@ -40,12 +40,12 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
     pro_check = input()
     if pro_check == 'y' or pro_check == 'Y':
         pro += 1
-        logging.debug("continued distraction")
+        logging.debug("/cont")
         dist_timings.append(datetime.datetime.now())
         print("Total number of times you've been distracted this session :", pro)
         ch = input("command :")
         if ch == '/avoid':
-            logging.debug("avoidable distraction")
+            logging.debug("/avoid")
             avoid+=1
             print("Total number of avoidable distraction =",avoid,"of",pro)
         elif ch == '/man':
@@ -53,7 +53,7 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
             man=open("/home/home/Desktop/flow_state/manual.html","r")
             webbrowser.open_new_tab('manual.html')
         elif ch == '/break':
-            logging.debug("break")
+            logging.debug("/break")
             break_timings.append(datetime.datetime.now())
             pro-=1
             br_time=int(input("Enter break duration (in minutes) :"))
@@ -62,22 +62,26 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
                 print("UNDERFLOWED TIMINGS")
                 print("ERROR CODE : 0.0.2 | Refer the manual for debug")
                 break    
-            else:            
+            else:
+                logging.debug("break start")            
                 br_timez=br_time*60          
                 time.sleep(br_timez)
                 br+=1
                 print("total number of breaks =",br)
                 br_total+=br_time 
+                logging.debug("break end")
         elif ch == '/pomodoro':
-            logging.debug("pomodoro init")
+            logging.debug("pomodoro start")
             pro-=1
             print("pomodoro set for 25 minutes")
             pomo_count+=1
             pomo_timer=25*60            
             time.sleep(pomo_timer)
+            logging.debug("pomodoro end")
             print("pomodoro session completed")
             if pomo_count%4 == 0:
                 print()
+                logging.debug("one pomodoro set completed")
                 print("pomodoro sessions completed =",pomo_count)
                 print("you deserve a break")            
     elif pro==0 and avoid==0:
