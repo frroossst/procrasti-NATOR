@@ -1,4 +1,4 @@
-#version 2.2.2
+#version 2.2.3
 import time
 import datetime
 import webbrowser
@@ -88,11 +88,11 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
                 print("you deserve a break") 
         elif ch == '/concentrator':
             logging.debug("/concentrator")            
-            pro-=1s
+            pro-=1
             print("1. assassin's creed iv black flag")
             print("2. assassin's creed ii")
             print("3. assassin's creed odyssey")
-            vid_choice=int(input())
+            vid_choice=int(input("choice = "))
             if vid_choice == 1:
                 logging.debug("vid_choice = 1")
                 webbrowser.open_new("https://www.youtube.com/watch?v=JYVMnLUZu9Y&t=1320s")
