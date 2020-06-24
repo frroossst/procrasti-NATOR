@@ -1,4 +1,4 @@
-#version 2.2.4
+#version 2.2.5
 import time
 import datetime
 import webbrowser
@@ -24,7 +24,7 @@ print("/avoid - to count avoidable distractions")
 time.sleep(0.1)
 print("/pomodoro - to initiate 25x4 pomodoro timer")
 time.sleep(0.1)
-print("/conc - view OST that *might* help you concentrate")
+print("/sound - view OST that *might* help you concentrate")
 time.sleep(0.1)
 print("/man - to view the manual")
 '''time.sleep(0.1)
@@ -37,7 +37,7 @@ dist_timings=break_timings=[]
 avoid=pro=br=br_total=br_timez=pomo_count=0
 ch = '/begin'
 print("start time =",now)
-while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/log' or ch=='/pomodoro' or ch=='/conc':
+while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/log' or ch=='/pomodoro' or ch=='/sound':
     print("Did you find your mind wander off?")
     pro_check = input()
     if pro_check == 'y' or pro_check == 'Y':
@@ -86,13 +86,13 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
                 logging.debug("one pomodoro set completed")
                 print("pomodoro sessions completed =",pomo_count)
                 print("you deserve a break") 
-        elif ch == '/conc':
-            logging.debug("/conc")            
+        elif ch == '/sound':
+            logging.debug("/sound")            
             pro-=1
             print("1. assassin's creed iv black flag")
             print("2. assassin's creed ii")
             print("3. assassin's creed odyssey")
-            vid_choice=int(input("choice = "))
+            vid_choice=int(input("select = "))
             if vid_choice == 1:
                 logging.debug("vid_choice = 1")
                 webbrowser.open_new("https://www.youtube.com/watch?v=JYVMnLUZu9Y&t=1320s")
