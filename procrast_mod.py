@@ -1,4 +1,4 @@
-#version 2.3.0
+#version 2.4.1
 import time
 import datetime
 import webbrowser
@@ -14,7 +14,7 @@ print("procrasti-NATOR 2020")
 logging.debug("---START---")
 print("created by -frroossst 02:14 31 May 2020")
 time.sleep(1)
-print("Commands:")
+print("Commands :")
 time.sleep(0.25)
 print("/begin - to initiate program")
 time.sleep(0.1)
@@ -46,8 +46,8 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
         pro += 1
         logging.debug("/cont")
         dist_timings.append(datetime.datetime.now())
-        print("Total number of times you've been distracted this session :", pro)
-        ch = input("command :")
+        print("Total number of times you've been distracted this session : ", pro)
+        ch = input("command : ")
         if ch == '/avoid':
             logging.debug("/avoid")
             avoid+=1
@@ -60,7 +60,7 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
             logging.debug("/break")
             break_timings.append(datetime.datetime.now())
             pro-=1
-            br_time=int(input("Enter break duration (in minutes) :"))
+            br_time=int(input("Enter break duration (in minutes) : "))
             if br_time<0:
                 logging.error("0.0.2")
                 print("UNDERFLOWED TIMINGS")
@@ -78,23 +78,39 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
                 window.deiconify()
                 window.destroy()
                 window.quit()
-                print("total number of breaks =",br)
+                print("total number of breaks = ",br)
                 br_total+=br_time 
                 logging.debug("break end")
         elif ch == '/pomodoro':
             logging.debug("pomodoro start")
             pro-=1
-            print("pomodoro set for 25 minutes")
-            pomo_count+=1
-            pomo_timer=25*60            
-            time.sleep(pomo_timer)
-            logging.debug("pomodoro end")
-            print("pomodoro session completed")
-            if pomo_count%4 == 0:
-                print()
-                logging.debug("one pomodoro set completed")
-                print("pomodoro sessions completed =",pomo_count)
-                print("you deserve a break") 
+            print("\n 1. standard timer \n 2. custom timer")
+            type_pomo=int(input())
+            if type_pomo == 1:
+                print("pomodoro set for 25 minutes")
+                pomo_count+=1
+                pomo_timer=25*60            
+                time.sleep(pomo_timer)
+                logging.debug("pomodoro end")
+                print("pomodoro session completed")
+                if pomo_count%4 == 0:
+                    print()
+                    logging.debug("one pomodoro set completed")
+                    print("pomodoro sessions completed = ",pomo_count)
+                    print("you deserve a break") 
+            #custom pomodoro timer block             
+            elif type_pomo == 2:
+                logging.debug("custom pomodoro started")
+                custom_timer=int(input("Enter custom time : "))
+                pomo_count+=1
+                custom_timer=custom_timer*60
+                time.sleep(custom_timer)
+                logging.debug("custom pomodoro end")
+                if pomo_count%4 == 0:
+                    print()
+                    logging.debug("one pomodoro set completed")
+                    print("pomodoro sessions completed = ",pomo_count)
+                    print("you deserve a break") 
         elif ch == '/sound':
             logging.debug("/sound")            
             pro-=1
@@ -121,15 +137,15 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
         break
     else:
         logging.debug("---END---")
-        print('total distractions =', pro)
-        print('avoidable distractions =',avoid)
-        print('unavoidable distractions =',pro-avoid)
-        print('distraction quotient =',(avoid/pro)*100,'%')
-        print('total breaks =',br)
-        print('total time spent in breaks =',br_total,'minute(s)')  
-        print('total pomodoro sessions =',pomo_count)      
+        print('total distractions = ', pro)
+        print('avoidable distractions = ',avoid)
+        print('unavoidable distractions = ',pro-avoid)
+        print('distraction quotient = ',(avoid/pro)*100,'%')
+        print('total breaks = ',br)
+        print('total time spent in breaks = ',br_total,'minute(s)')  
+        print('total pomodoro sessions = ',pomo_count)      
         later=datetime.datetime.now()
-        print('end time =',later)        
+        print('end time = ',later)        
         ch = 'n'
 """x.y.z 
 x= major changes
