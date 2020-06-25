@@ -1,4 +1,4 @@
-#version 2.4.1
+#version 2.4.2
 import time
 import datetime
 import webbrowser
@@ -125,7 +125,7 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
                 logging.debug("vid_choice = 2")
                 webbrowser.open_new("https://www.youtube.com/watch?v=iriiZOeInDg&t=5415s")
             elif vid_choice == 3:
-                logger.debug("vid_choice = 3")
+                logging.debug("vid_choice = 3")
                 webbrowser.open_new("https://www.youtube.com/watch?v=fwthw9Sy_RU")
             else:
                 logging.debug("invalid video choice")

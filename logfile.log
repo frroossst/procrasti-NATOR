@@ -74,3 +74,31 @@
 2020-06-25 18:12:54,219::DEBUG::root::procrast_mod.py::47::/cont
 2020-06-25 18:12:58,043::DEBUG::root::procrast_mod.py::85::pomodoro start
 2020-06-25 18:13:00,452::DEBUG::root::procrast_mod.py::103::custom pomodoro started
+2020-06-25 21:45:00,695::DEBUG::root::procrast_mod.py::14::---START---
+2020-06-25 21:45:05,502::ERROR::root::procrast_mod.py::134::0.0.1
+2020-06-25 21:45:10,129::DEBUG::root::procrast_mod.py::14::---START---
+2020-06-25 21:45:12,582::ERROR::root::procrast_mod.py::134::0.0.1
+2020-06-25 21:45:52,808::DEBUG::root::procrast_mod.py::14::---START---
+2020-06-25 21:46:04,502::DEBUG::root::procrast_mod.py::47::/cont
+2020-06-25 21:46:08,806::DEBUG::root::procrast_mod.py::115::/sound
+2020-06-25 21:47:12,672::DEBUG::root::procrast_mod.py::14::---START---
+2020-06-25 21:47:20,342::DEBUG::root::procrast_mod.py::47::/cont
+2020-06-25 21:47:23,310::DEBUG::root::procrast_mod.py::115::/sound
+2020-06-25 21:47:25,398::DEBUG::root::procrast_mod.py::128::vid_choice = 3
+2020-06-25 22:21:47,797::DEBUG::root::procrast_mod.py::47::/cont
+2020-06-25 22:21:50,213::DEBUG::root::procrast_mod.py::52::/avoid
+2020-06-25 22:24:55,369::DEBUG::root::procrast_mod.py::47::/cont
+2020-06-25 22:25:00,418::DEBUG::root::procrast_mod.py::52::/avoid
+2020-06-25 22:29:51,243::DEBUG::root::procrast_mod.py::47::/cont
+2020-06-25 22:51:02,639::DEBUG::root::procrast_mod.py::139::---END---
+2020-06-26 00:01:39,055::DEBUG::root::procrast_mod.py::22::---START---
+2020-06-26 00:01:46,375::DEBUG::root::procrast_mod.py::55::/cont
+2020-06-26 00:01:48,839::DEBUG::root::procrast_mod.py::55::/cont
+2020-06-26 00:01:50,919::DEBUG::root::procrast_mod.py::68::/break
+2020-06-26 00:01:52,975::DEBUG::root::procrast_mod.py::78::break start
+2020-06-26 00:01:55,403::DEBUG::root::procrast_mod.py::91::break end
+2020-06-26 00:01:57,383::DEBUG::root::procrast_mod.py::55::/cont
+2020-06-26 00:01:59,058::DEBUG::root::procrast_mod.py::60::/avoid
+2020-06-26 00:02:00,067::DEBUG::root::procrast_mod.py::147::---END---
+2020-06-26 00:02:46,904::DEBUG::root::procrast_mod.py::14::---START---
+2020-06-26 00:02:50,767::ERROR::root::procrast_mod.py::134::0.0.1
