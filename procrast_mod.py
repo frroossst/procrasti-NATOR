@@ -1,9 +1,11 @@
-#version 2.2.5
+#version 2.3.0
 import time
 import datetime
 import webbrowser
 import logging
 import codecs
+from tkinter import *
+from tkinter import messagebox
 #filemode='w' for overwriting and erase for continued logs
 log_format = "%(asctime)s::%(levelname)s::%(name)s::"\
 "%(filename)s::%(lineno)d::%(message)s"
@@ -69,6 +71,13 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
                 br_timez=br_time*60          
                 time.sleep(br_timez)
                 br+=1
+                window = Tk()
+                window.eval("tk::PlaceWindow %s center" % window.winfo_toplevel())
+                window.withdraw()
+                messagebox.showinfo("procrast-NATOR","Break has ended", icon ='warning')
+                window.deiconify()
+                window.destroy()
+                window.quit()
                 print("total number of breaks =",br)
                 br_total+=br_time 
                 logging.debug("break end")

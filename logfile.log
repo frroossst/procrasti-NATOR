@@ -31,3 +31,18 @@
 2020-06-24 18:13:16,259::DEBUG::root::procrast_mod.py::74::break end
 2020-06-24 18:38:14,326::DEBUG::root::procrast_mod.py::12::---START---
 2020-06-24 18:48:50,769::ERROR::root::procrast_mod.py::109::0.0.1
+2020-06-24 19:00:07,510::DEBUG::root::procrast_mod.py::12::---START---
+2020-06-24 19:00:12,140::DEBUG::root::procrast_mod.py::45::/cont
+2020-06-24 19:00:16,012::DEBUG::root::procrast_mod.py::90::/sound
+2020-06-24 19:00:19,964::DEBUG::root::procrast_mod.py::97::vid_choice = 1
+2020-06-24 19:11:12,359::DEBUG::root::procrast_mod.py::45::/cont
+2020-06-24 19:11:14,783::DEBUG::root::procrast_mod.py::50::/avoid
+2020-06-25 10:18:51,763::DEBUG::root::procrast_mod.py::14::---START---
+2020-06-25 10:18:55,562::DEBUG::root::procrast_mod.py::47::/cont
+2020-06-25 10:18:59,938::DEBUG::root::procrast_mod.py::60::/break
+2020-06-25 10:19:07,900::DEBUG::root::procrast_mod.py::14::---START---
+2020-06-25 10:19:12,395::DEBUG::root::procrast_mod.py::47::/cont
+2020-06-25 10:19:14,931::DEBUG::root::procrast_mod.py::60::/break
+2020-06-25 10:19:16,275::DEBUG::root::procrast_mod.py::70::break start
+2020-06-25 10:20:24,696::DEBUG::root::procrast_mod.py::83::break end
+2020-06-25 10:20:37,611::ERROR::root::procrast_mod.py::118::0.0.1
