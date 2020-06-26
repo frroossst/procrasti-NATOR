@@ -1,4 +1,4 @@
-#version 2.4.2
+#version 2.4.3
 import time
 import datetime
 import webbrowser
@@ -147,8 +147,9 @@ while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/
         later=datetime.datetime.now()
         print('end time = ',later)        
         ch = 'n'
-"""x.y.z 
-x= major changes
-y= new features/additions
-z= minor bug fixes"""
+#version naming scheme
+#x.y.z 
+#x= major changes
+#y= new features/additions
+#z= minor bug fixes"""
 """YES I DO REALIZE IT IS A DISTRACTION TRACKER RATHER THAN PROCRASTINATION TRACKER UGH!""" 
