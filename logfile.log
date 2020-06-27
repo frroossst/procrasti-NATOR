@@ -109,3 +109,67 @@
 2020-06-26 15:36:46,213::DEBUG::root::procrast_mod.py::115::/sound
 2020-06-26 15:36:47,405::DEBUG::root::procrast_mod.py::131::vid_choice = 4
 2020-06-26 15:36:54,928::ERROR::root::procrast_mod.py::137::0.0.1
+2020-06-26 20:39:24,788::DEBUG::root::procrast_mod.py::14::---START---
+2020-06-26 20:39:29,926::DEBUG::root::procrast_mod.py::47::/cont
+2020-06-26 20:39:32,652::DEBUG::root::procrast_mod.py::115::/sound
+2020-06-26 20:39:53,708::DEBUG::root::procrast_mod.py::125::vid_choice = 2
+2020-06-26 20:40:11,976::DEBUG::root::procrast_mod.py::47::/cont
+2020-06-26 20:40:14,401::DEBUG::root::procrast_mod.py::115::/sound
+2020-06-26 20:40:15,321::DEBUG::root::procrast_mod.py::122::vid_choice = 1
+2020-06-26 20:40:23,827::DEBUG::root::procrast_mod.py::47::/cont
+2020-06-26 20:40:26,403::DEBUG::root::procrast_mod.py::115::/sound
+2020-06-26 20:40:27,467::DEBUG::root::procrast_mod.py::128::vid_choice = 3
+2020-06-26 20:40:33,748::DEBUG::root::procrast_mod.py::47::/cont
+2020-06-26 20:40:37,692::DEBUG::root::procrast_mod.py::115::/sound
+2020-06-26 20:40:39,431::DEBUG::root::procrast_mod.py::132::---miserere mei deus
+2020-06-26 20:44:59,161::ERROR::root::procrast_mod.py::138::0.0.1
+2020-06-27 11:58:45,435::DEBUG::root::login.py::32::---START---
+2020-06-27 11:58:49,454::DEBUG::root::login.py::65::/cont
+2020-06-27 11:58:52,190::DEBUG::root::login.py::70::/avoid
+2020-06-27 11:58:55,238::DEBUG::root::login.py::65::/cont
+2020-06-27 11:58:59,911::DEBUG::root::login.py::161::---END---
+2020-06-27 11:58:59,911::DEBUG::root::login.py::32::---START---
+2020-06-27 12:02:32,159::ERROR::root::login.py::156::0.0.1
+2020-06-27 12:03:36,130::DEBUG::root::login.py::32::---START---
+2020-06-27 12:03:41,066::DEBUG::root::login.py::65::/cont
+2020-06-27 12:03:43,242::DEBUG::root::login.py::70::/avoid
+2020-06-27 12:03:44,170::DEBUG::root::login.py::65::/cont
+2020-06-27 12:03:46,322::DEBUG::root::login.py::161::---END---
+2020-06-27 12:03:46,323::DEBUG::root::login.py::32::---START---
+2020-06-27 12:03:52,139::ERROR::root::login.py::156::0.0.1
+2020-06-27 12:06:19,240::DEBUG::root::login.py::32::---START---
+2020-06-27 12:06:22,687::DEBUG::root::login.py::65::/cont
+2020-06-27 12:06:24,582::DEBUG::root::login.py::70::/avoid
+2020-06-27 12:06:24,582::DEBUG::root::login.py::32::---START---
+2020-06-27 12:06:37,174::ERROR::root::login.py::156::0.0.1
+2020-06-27 12:06:41,718::DEBUG::root::login.py::32::---START---
+2020-06-27 12:06:45,137::DEBUG::root::login.py::65::/cont
+2020-06-27 12:06:46,952::DEBUG::root::login.py::161::---END---
+2020-06-27 12:06:46,953::DEBUG::root::login.py::32::---START---
+2020-06-27 12:07:42,091::ERROR::root::login.py::156::0.0.1
+2020-06-27 12:53:17,913::DEBUG::root::login.py::40::---START---
+2020-06-27 12:53:25,026::DEBUG::root::login.py::73::/cont
+2020-06-27 12:53:27,594::DEBUG::root::login.py::78::/avoid
+2020-06-27 12:53:28,377::DEBUG::root::login.py::169::---END---
+2020-06-27 12:54:15,329::DEBUG::root::login.py::38::---START---
+2020-06-27 12:54:19,183::DEBUG::root::login.py::71::/cont
+2020-06-27 12:54:36,521::DEBUG::root::login.py::38::---START---
+2020-06-27 12:54:42,174::DEBUG::root::login.py::71::/cont
+2020-06-27 12:54:43,862::DEBUG::root::login.py::76::/avoid
+2020-06-27 12:54:44,838::DEBUG::root::login.py::71::/cont
+2020-06-27 12:54:47,078::DEBUG::root::login.py::167::---END---
+2020-06-27 13:01:16,860::DEBUG::root::procrast_mod.py::39::---START---
+2020-06-27 13:01:43,148::ERROR::root::procrast_mod.py::163::0.0.1
+2020-06-27 13:06:49,468::DEBUG::root::procrast_mod.py::40::---START---
+2020-06-27 13:10:10,936::DEBUG::root::procrast_mod.py::42::---START---
+2020-06-27 13:10:22,045::ERROR::root::procrast_mod.py::166::0.0.1
+2020-06-27 13:14:53,596::DEBUG::root::procrast_mod.py::25::new user created
+2020-06-27 13:16:15,218::DEBUG::root::procrast_mod.py::41::user logged in
+2020-06-27 13:16:16,219::DEBUG::root::procrast_mod.py::46::---START---
+2020-06-27 13:16:23,536::DEBUG::root::procrast_mod.py::79::/cont
+2020-06-27 13:16:25,952::DEBUG::root::procrast_mod.py::175::---END---
+2020-06-27 13:16:37,776::DEBUG::root::procrast_mod.py::41::user logged in
+2020-06-27 13:16:38,778::DEBUG::root::procrast_mod.py::46::---START---
+2020-06-27 13:17:20,469::ERROR::root::procrast_mod.py::170::0.0.1
+2020-06-27 13:17:30,614::DEBUG::root::procrast_mod.py::41::user logged in
+2020-06-27 13:17:31,616::DEBUG::root::procrast_mod.py::46::---START---
