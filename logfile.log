@@ -184,3 +184,16 @@
 2020-06-27 14:35:24,974::INFO::root::procrast_mod.py::41::login successful
 2020-06-27 14:35:25,975::DEBUG::root::procrast_mod.py::46::---START---
 2020-06-27 14:35:32,324::ERROR::root::procrast_mod.py::170::0.0.1
+2020-06-27 14:42:23,965::INFO::root::procrast_mod.py::28::new user created
+2020-06-27 14:42:45,737::CRITICAL::root::procrast_mod.py::188::authentication failure
+2020-06-27 14:42:45,737::CRITICAL::root::procrast_mod.py::188::authentication failure
+2020-06-27 14:42:45,738::CRITICAL::root::procrast_mod.py::188::authentication failure
+2020-06-27 14:42:46,739::INFO::root::procrast_mod.py::42::login successful
+2020-06-27 14:42:47,740::DEBUG::root::procrast_mod.py::47::---START---
+2020-06-27 14:43:05,377::ERROR::root::procrast_mod.py::171::0.0.1
+2020-06-27 14:43:09,995::CRITICAL::root::procrast_mod.py::188::authentication failure
+2020-06-27 14:43:09,995::CRITICAL::root::procrast_mod.py::188::authentication failure
+2020-06-27 14:43:09,995::CRITICAL::root::procrast_mod.py::188::authentication failure
+2020-06-27 14:43:10,996::INFO::root::procrast_mod.py::42::login successful
+2020-06-27 14:43:11,998::DEBUG::root::procrast_mod.py::47::---START---
+2020-06-27 14:43:30,074::ERROR::root::procrast_mod.py::171::0.0.1

@@ -1,10 +1,11 @@
-#version 2.5.1
+#version 2.5.2
 import time
 import datetime
 import webbrowser
 import logging
 import codecs
 import csv
+import getpass
 from tkinter import *
 from tkinter import messagebox
 #filemode='w' for overwriting and erase for continued logs
@@ -20,7 +21,7 @@ if usrin == 'y' or usrin == 'Y':
         csv_writer =csv.writer(f)
         while (1):
             new_usr=input("enter username = ")
-            new_pass=input("enter password = ")
+            new_pass=getpass.getpass("enter password = ")
             csv_writer.writerow([new_usr,new_pass])
             time.sleep(0.5)
             print("new user created")
@@ -31,7 +32,7 @@ else:
         csv_reader=csv.reader(f)
         usr_cred=input("enter username : ")  
         li.append(usr_cred)
-        usr_pass=input("enter password : ")      
+        usr_pass=getpass.getpass("enter password : ")      
         li.append(usr_pass)
         for row in csv_reader:
             if li == row:
