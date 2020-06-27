@@ -1,4 +1,4 @@
-#version 2.5.2
+#version 2.5.3
 import time
 import datetime
 import webbrowser
@@ -14,6 +14,7 @@ log_format = "%(asctime)s::%(levelname)s::%(name)s::"\
 logging.basicConfig(filename='/home/home/Desktop/flow_state/logfile.log' , level='DEBUG', format=log_format)
 li=[]
 ch='n'
+logging.debug("---START---")
 print("are you a new user? y/n")
 usrin=input()
 if usrin == 'y' or usrin == 'Y':
@@ -44,7 +45,6 @@ else:
                 time.sleep(1)
                 ch='/begin'
                 print("procrasti-NATOR 2020")
-                logging.debug("---START---")
                 print("created by -frroossst 02:14 31 May 2020")
                 time.sleep(1)
                 print("Commands :")
