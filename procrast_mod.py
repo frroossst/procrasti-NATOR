@@ -185,7 +185,7 @@ else:
                         print('end time = ',later)        
                         ch = 'n'
             else:
-                logging.critical("authentication failure")
+                #logging.critical("authentication failure")
 #version naming scheme
 #x.y.z 
 #x= major changes
