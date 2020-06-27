@@ -1,4 +1,4 @@
-#version 2.5.0
+#version 2.5.1
 import time
 import datetime
 import webbrowser
@@ -24,7 +24,7 @@ if usrin == 'y' or usrin == 'Y':
             csv_writer.writerow([new_usr,new_pass])
             time.sleep(0.5)
             print("new user created")
-            logging.debug("new user created")
+            logging.info("new user created")
             break
 else:
     with open("/home/home/Desktop/flow_state/cred.csv","r") as f:
@@ -38,7 +38,7 @@ else:
                 time.sleep(1)
                 print()
                 print("logging in...")
-                logging.debug("user logged in")    
+                logging.info("login successful")    
                 print()
                 time.sleep(1)
                 ch='/begin'
@@ -161,7 +161,7 @@ else:
                                 webbrowser.open_new("https://www.youtube.com/watch?v=fwthw9Sy_RU")
                             #miserere mei deus            
                             elif vid_choice == 4:
-                                logging.debug("---miserere mei deus")
+                                logging.info("---miserere mei deus---")
                                 webbrowser.open_new("https://www.youtube.com/watch?v=36Y_ztEW1NE")
                             else:
                                 logging.debug("invalid video choice")
@@ -183,6 +183,8 @@ else:
                         later=datetime.datetime.now()
                         print('end time = ',later)        
                         ch = 'n'
+            else:
+                logging.critical("authentication failure")
 #version naming scheme
 #x.y.z 
 #x= major changes
