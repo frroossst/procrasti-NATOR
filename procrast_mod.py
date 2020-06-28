@@ -1,4 +1,4 @@
-#version 2.5.5
+#version 2.5.6
 import time
 import datetime
 import webbrowser
@@ -13,7 +13,8 @@ log_format = "%(asctime)s::%(levelname)s::%(name)s::"\
 "%(filename)s::%(lineno)d::%(message)s"
 logging.basicConfig(filename='/home/home/Desktop/flow_state/logfile.log' , level='DEBUG', format=log_format)
 li=[]
-er_0_0_1=0
+er_0_0_1=er_0_0_4=0
+pro=avoid=0
 pro_check=ch='n'
 logging.debug("---START---")
 print("are you a new user? y/n")
@@ -189,10 +190,11 @@ else:
                         print('total time spent in breaks = ',br_total,'minute(s)')  
                         print('total pomodoro sessions = ',pomo_count)      
                         later=datetime.datetime.now()
-                        print('end time = ',later)        
+                        print('end time = ',later)
+                        er_0_0_4=1       
                         ch = 'n'
         else:
-            if pro_check!='n' or pro_check !='N' and er_0_0_1==0:
+            if pro_check!='n' or pro_check !='N' and er_0_0_1==0 and er_0_0_4!=1:
                 logging.critical("authentication failure")
                 print("ERROR CODE : 0.0.4 | Refer the manual for debug")
                 #version naming scheme
