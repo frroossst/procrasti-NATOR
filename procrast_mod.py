@@ -1,4 +1,4 @@
-#version 2.5.3
+#version 2.5.5
 import time
 import datetime
 import webbrowser
@@ -13,7 +13,8 @@ log_format = "%(asctime)s::%(levelname)s::%(name)s::"\
 "%(filename)s::%(lineno)d::%(message)s"
 logging.basicConfig(filename='/home/home/Desktop/flow_state/logfile.log' , level='DEBUG', format=log_format)
 li=[]
-ch='n'
+er_0_0_1=0
+pro_check=ch='n'
 logging.debug("---START---")
 print("are you a new user? y/n")
 usrin=input()
@@ -67,6 +68,7 @@ else:
                 time.sleep(0.1)
                 print("/break - to take a break")
                 time.sleep(0.5)
+                pro_check=='n'
                 now=datetime.datetime.now()
                 dist_timings=break_timings=[]
                 avoid=pro=br=br_total=br_timez=pomo_count=0
@@ -162,13 +164,18 @@ else:
                                 webbrowser.open_new("https://www.youtube.com/watch?v=fwthw9Sy_RU")
                             #miserere mei deus            
                             elif vid_choice == 4:
-                                logging.info("---miserere mei deus---")
-                                webbrowser.open_new("https://www.youtube.com/watch?v=36Y_ztEW1NE")
+                                print("are you sure you want to continue? y/n")
+                                #easter egg                                
+                                ee=input()
+                                if ee == 'n' or 'N':
+                                    logging.info("---miserere mei deus---")
+                                    webbrowser.open_new("https://www.youtube.com/watch?v=36Y_ztEW1NE")
                             else:
                                 logging.debug("invalid video choice")
                                 print("ERROR CODE : 0.0.3 | Refer the manual for debug")           
                     elif pro==0 and avoid==0:
                         logging.error("0.0.1")
+                        er_0_0_1=1                        
                         print("NULL ERROR")
                         print("ERROR CODE : 0.0.1 | Refer the manual for debug")
                         break
@@ -184,11 +191,13 @@ else:
                         later=datetime.datetime.now()
                         print('end time = ',later)        
                         ch = 'n'
-            else:
-                #logging.critical("authentication failure")
-#version naming scheme
-#x.y.z 
-#x= major changes
-#y= new features/additions
-#z= minor bug fixes"""
-"""YES I DO REALIZE IT IS A DISTRACTION TRACKER RATHER THAN PROCRASTINATION TRACKER UGH!""" 
+        else:
+            if pro_check!='n' or pro_check !='N' and er_0_0_1==0:
+                logging.critical("authentication failure")
+                print("ERROR CODE : 0.0.4 | Refer the manual for debug")
+                #version naming scheme
+                #x.y.z 
+                #x= major changes
+                #y= new features/addition
+                #z= minor bug fixes
+                """YES I DO REALIZE IT IS A DISTRACTION TRACKER RATHER THAN PROCRASTINATION TRACKER UGH!"""
