@@ -1,4 +1,4 @@
-#version 2.5.6
+#version 2.5.7
 import time
 import datetime
 import webbrowser
@@ -41,11 +41,13 @@ else:
             if li == row:
                 time.sleep(1)
                 print()
-                print("logging in...")
-                logging.info("login successful")    
-                print()
-                time.sleep(1)
+                print("logging in ","......")
+                time.sleep(1.25)
+                logging.info("login successful")   
+                print("welcome",usr_cred)
+                time.sleep(0.75)
                 ch='/begin'
+                print()                
                 print("procrasti-NATOR 2020")
                 print("created by -frroossst 02:14 31 May 2020")
                 time.sleep(1)
@@ -182,6 +184,7 @@ else:
                         break
                     else:
                         logging.debug("---END---")
+                        print('here is a breakdown of your session',usr_cred)
                         print('total distractions = ', pro)
                         print('avoidable distractions = ',avoid)
                         print('unavoidable distractions = ',pro-avoid)

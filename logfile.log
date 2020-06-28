@@ -419,3 +419,37 @@
 2020-06-28 16:51:30,178::DEBUG::root::procrast_mod.py::88::/avoid
 2020-06-28 16:51:31,569::DEBUG::root::procrast_mod.py::83::/cont
 2020-06-28 16:51:34,512::DEBUG::root::procrast_mod.py::184::---END---
+2020-06-28 16:53:01,755::DEBUG::root::procrast_mod.py::19::---START---
+2020-06-28 16:53:03,713::CRITICAL::root::procrast_mod.py::198::authentication failure
+2020-06-28 16:53:08,869::DEBUG::root::procrast_mod.py::19::---START---
+2020-06-28 16:53:15,181::INFO::root::procrast_mod.py::45::login successful
+2020-06-28 16:53:19,675::ERROR::root::procrast_mod.py::178::0.0.1
+2020-06-28 16:53:20,558::DEBUG::root::procrast_mod.py::19::---START---
+2020-06-28 16:53:25,775::INFO::root::procrast_mod.py::45::login successful
+2020-06-28 16:53:30,914::DEBUG::root::procrast_mod.py::83::/cont
+2020-06-28 16:53:32,974::DEBUG::root::procrast_mod.py::88::/avoid
+2020-06-28 16:53:33,935::DEBUG::root::procrast_mod.py::184::---END---
+2020-06-28 23:07:18,667::DEBUG::root::procrast_mod.py::19::---START---
+2020-06-28 23:07:28,305::INFO::root::procrast_mod.py::45::login successful
+2020-06-28 23:12:22,115::DEBUG::root::procrast_mod.py::19::---START---
+2020-06-28 23:12:30,748::INFO::root::procrast_mod.py::45::login successful
+2020-06-28 23:12:55,823::DEBUG::root::procrast_mod.py::19::---START---
+2020-06-28 23:13:05,484::INFO::root::procrast_mod.py::45::login successful
+2020-06-28 23:13:40,208::DEBUG::root::procrast_mod.py::19::---START---
+2020-06-28 23:13:47,011::INFO::root::procrast_mod.py::46::login successful
+2020-06-28 23:13:54,195::ERROR::root::procrast_mod.py::180::0.0.1
+2020-06-28 23:14:01,842::DEBUG::root::procrast_mod.py::19::---START---
+2020-06-28 23:14:12,011::INFO::root::procrast_mod.py::46::login successful
+2020-06-28 23:16:28,391::DEBUG::root::procrast_mod.py::19::---START---
+2020-06-28 23:16:40,650::INFO::root::procrast_mod.py::46::login successful
+2020-06-28 23:16:51,623::DEBUG::root::procrast_mod.py::19::---START---
+2020-06-28 23:17:01,834::INFO::root::procrast_mod.py::46::login successful
+2020-06-28 23:18:06,480::DEBUG::root::procrast_mod.py::19::---START---
+2020-06-28 23:18:13,099::INFO::root::procrast_mod.py::46::login successful
+2020-06-28 23:18:17,615::DEBUG::root::procrast_mod.py::85::/cont
+2020-06-28 23:18:20,767::DEBUG::root::procrast_mod.py::186::---END---
+2020-06-28 23:18:30,473::DEBUG::root::procrast_mod.py::19::---START---
+2020-06-28 23:18:37,528::CRITICAL::root::procrast_mod.py::201::authentication failure
+2020-06-28 23:18:39,787::DEBUG::root::procrast_mod.py::19::---START---
+2020-06-28 23:18:52,052::INFO::root::procrast_mod.py::46::login successful
+2020-06-28 23:57:36,132::ERROR::root::procrast_mod.py::180::0.0.1
