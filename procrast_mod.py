@@ -1,4 +1,4 @@
-#version 2.5.9
+#version 2.6.0
 import time
 import datetime
 import webbrowser
@@ -16,7 +16,8 @@ logging.basicConfig(filename='/home/home/Desktop/flow_state/logfile.log' , level
 logging.info("***---INIT---***")
 logging.info(os.name)
 logging.info(os.getcwd())
-li=[]
+li=todo=[]
+td='y'
 er_0_0_1=er_0_0_4=0
 pro=avoid=0
 pro_check=ch='n'
@@ -77,6 +78,8 @@ else:
                 time.sleep(0.1)
                 print("/sound - view OST that *might* help you concentrate")
                 time.sleep(0.1)
+                print("/todo - create and manage a todo list")
+                time.sleep(0.1)
                 print("/man - to view the manual")
                 '''time.sleep(0.1)
                 print("/log - to view the distraction log")'''
@@ -89,11 +92,12 @@ else:
                 avoid=pro=br=br_total=br_timez=pomo_count=0
                 ch = '/begin'
                 print("start time =",now)
-                while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/log' or ch=='/pomodoro' or ch=='/sound':
+                while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/log' or ch=='/pomodoro' or ch=='/sound' or ch=='/todo':
                     print("Did you find your mind wander off?")
                     pro_check = input()
                     if pro_check == 'y' or pro_check == 'Y':
                         pro += 1
+                        td=='y'
                         logging.debug("/cont")
                         dist_timings.append(datetime.datetime.now())
                         print("Total number of times you've been distracted this session : ", pro)
@@ -188,6 +192,34 @@ else:
                             else:
                                 logging.debug("invalid video choice")
                                 print("ERROR CODE : 0.0.3 | Refer the manual for debug")           
+                        elif ch=='/todo':
+                            td='y'
+                            pro-=1
+                            while td=='y':                                    
+                                print()
+                                time.sleep(0.75)        
+                                print("\n 1. add an item \n 2. strikeoff an item \n 3. view current list")
+                                print()
+                                ch_td=int(input(": "))
+                                if ch_td == 1:
+                                    elmnt=input("enter the element : ")
+                                    todo.append(elmnt)
+                                    print("current list : ")
+                                    print(todo)
+                                    print()
+                                    td=input("do you want to continue? ")
+                                elif ch_td ==2:
+                                    strk=int(input("which item do you want to remove? "))
+                                    strk-=1
+                                    todo.pop(strk)
+                                    print("current list : ")
+                                    print(todo)
+                                    print()
+                                    td=input("do you want to continue? ")
+                                elif ch_td==3:
+                                    for i in todo:
+                                        print(i)
+                                    td=input("do you want to continue? ")                                
                     elif pro==0 and avoid==0:
                         logging.error("0.0.1")
                         er_0_0_1=1                        
