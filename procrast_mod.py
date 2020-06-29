@@ -1,4 +1,4 @@
-#version 2.5.7
+#version 2.5.8
 import time
 import datetime
 import webbrowser
@@ -29,6 +29,13 @@ if usrin == 'y' or usrin == 'Y':
             time.sleep(0.5)
             print("new user created")
             logging.info("new user created")
+            window = Tk()
+            window.eval("tk::PlaceWindow %s center" % window.winfo_toplevel())
+            window.withdraw()
+            messagebox.showinfo("user","user created")
+            window.deiconify()
+            window.destroy()
+            window.quit()
             break
 else:
     with open("/home/home/Desktop/flow_state/cred.csv","r") as f:
@@ -40,12 +47,11 @@ else:
         for row in csv_reader:
             if li == row:
                 time.sleep(1)
-                print()
                 print("logging in ","......")
                 time.sleep(1.25)
-                logging.info("login successful")   
-                print("welcome",usr_cred)
-                time.sleep(0.75)
+                logging.info("login successful")
+                print()   
+                print("welcome","* ",usr_cred," *")
                 ch='/begin'
                 print()                
                 print("procrasti-NATOR 2020")
