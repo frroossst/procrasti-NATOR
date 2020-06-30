@@ -1,4 +1,4 @@
-#version 2.6.2
+#version 2.6.3
 import time
 import datetime
 import webbrowser
@@ -84,18 +84,19 @@ else:
                 print("/calc - to open a web calculator")
                 time.sleep(0.1)
                 print("/man - to view the manual")
-                '''time.sleep(0.1)
-                print("/log - to view the distraction log")'''
+                time.sleep(0.1)
+                print("/credit - to  view appropriate credits")
+                '''print("/log - to view the distraction log")'''
                 time.sleep(0.1)
                 print("/break - to take a break")
                 time.sleep(0.5)
                 pro_check=='n'
                 now=datetime.datetime.now()
                 dist_timings=break_timings=[]
-                avoid=pro=br=br_total=br_timez=pomo_count=0
+                avoid=pro=br=br_total=br_timez=pomo_count=calc=0
                 ch = '/begin'
                 print("start time =",now)
-                while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/log' or ch=='/pomodoro' or ch=='/sound' or ch=='/todo' or ch=='/calc':
+                while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/log' or ch=='/pomodoro' or ch=='/sound' or ch=='/todo' or ch=='/calc' or ch=='/credit':
                     print("Did you find your mind wander off?")
                     pro_check = input()
                     if pro_check == 'y' or pro_check == 'Y':
@@ -246,16 +247,29 @@ else:
                                         print(i)
                                     td=input("do you want to continue? ")                                
                         elif ch=='/calc':
+                            calc+=1
+                            logging.debug("/calc")
                             print("1. scientific calculator 2. graphical calculator") 
                             calc_type=int(input())
                             if calc_type ==1:
+                                logging.debug("scientific calc")
                                 webbrowser.open_new("https://www.desmos.com/scientific")
                             elif calc_type==2:
+                                logging.debug("graphing calc")
                                 webbrowser.open_new("https://www.desmos.com/calculator")
                             else:
                                 logging.debug("invalid calc type choice")
                                 print("ERROR CODE : 0.0.3 | Refer the manual for debug")
-                                
+                        elif ch=='/credit':
+                            logging.debug("/credit")
+                            pro-=1                            
+                            print()
+                            print("the code in its entirety was written by frroossst (me)")
+                            print()
+                            print("the /calc function utilizes an online web application ie https://www.desmos.com")
+                            print()
+                            print("/sound funcition utilizes the https://www.youtube.com website for playing videos")
+                            print()     
                     elif pro==0 and avoid==0:
                         logging.error("0.0.1")
                         er_0_0_1=1                        
@@ -271,7 +285,8 @@ else:
                         print('distraction quotient = ',(avoid/pro)*100,'%')
                         print('total breaks = ',br)
                         print('total time spent in breaks = ',br_total,'minute(s)')  
-                        print('total pomodoro sessions = ',pomo_count)      
+                        print('total pomodoro sessions = ',pomo_count)
+                        print('total number of times you used calculator = ',calc)      
                         later=datetime.datetime.now()
                         print('end time = ',later)
                         er_0_0_4=1       
