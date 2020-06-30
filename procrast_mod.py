@@ -1,4 +1,4 @@
-#version 2.6.0
+#version 2.6.1
 import time
 import datetime
 import webbrowser
@@ -16,7 +16,8 @@ logging.basicConfig(filename='/home/home/Desktop/flow_state/logfile.log' , level
 logging.info("***---INIT---***")
 logging.info(os.name)
 logging.info(os.getcwd())
-li=todo=[]
+li=[]
+todo=[]
 td='y'
 er_0_0_1=er_0_0_4=0
 pro=avoid=0
@@ -193,6 +194,7 @@ else:
                                 logging.debug("invalid video choice")
                                 print("ERROR CODE : 0.0.3 | Refer the manual for debug")           
                         elif ch=='/todo':
+                            logging.debug("/todo")
                             td='y'
                             pro-=1
                             while td=='y':                                    
@@ -206,17 +208,38 @@ else:
                                     todo.append(elmnt)
                                     print("current list : ")
                                     print(todo)
+                                    len_todo=len(todo)
                                     print()
+                                    logging.debug("element added to list")
                                     td=input("do you want to continue? ")
                                 elif ch_td ==2:
                                     strk=int(input("which item do you want to remove? "))
-                                    strk-=1
-                                    todo.pop(strk)
-                                    print("current list : ")
-                                    print(todo)
-                                    print()
-                                    td=input("do you want to continue? ")
+                                    len_todo=len(todo)
+                                    strk=strk-1
+                                    if strk<0:
+                                        logging.error("0.0.5")
+                                        print("UNDERFLOW ERROR")
+                                        print("ERROR CODE : 0.0.5 | Refer the manual for debug")
+                                        print()
+                                        break
+                                    else:
+                                        len_todo=len(todo)
+                                        if strk >= len_todo:
+                                            logging.error("0.0.6")
+                                            print("OVERFLOW ERROR")
+                                            print("ERROR CODE : 0.0.6 | Refer the manual for debug")
+                                            print()
+                                            break
+                                        else:
+                                            todo.pop(strk)
+                                            print("current list : ")
+                                            print(todo)
+                                            print()
+                                            logging.debug("element removed from the list")
+                                            td=input("do you want to continue? ")
                                 elif ch_td==3:
+                                    logging.debug("list printed")
+                                    print()
                                     for i in todo:
                                         print(i)
                                     td=input("do you want to continue? ")                                
