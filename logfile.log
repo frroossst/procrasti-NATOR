@@ -829,3 +829,12 @@
 2020-06-30 10:35:10,625::DEBUG::root::procrast_mod.py::213::element added to list
 2020-06-30 10:35:13,849::DEBUG::root::procrast_mod.py::241::list printed
 2020-06-30 10:35:32,202::ERROR::root::procrast_mod.py::220::0.0.5
+2020-06-30 10:44:59,300::INFO::root::procrast_mod.py::16::***---INIT---***
+2020-06-30 10:44:59,300::INFO::root::procrast_mod.py::17::posix
+2020-06-30 10:44:59,300::INFO::root::procrast_mod.py::18::/home/home/Desktop/flow_state
+2020-06-30 10:44:59,300::DEBUG::root::procrast_mod.py::25::---START---
+2020-06-30 10:45:04,759::INFO::root::procrast_mod.py::56::|USER|
+2020-06-30 10:45:04,760::INFO::root::procrast_mod.py::57::root
+2020-06-30 10:45:06,011::INFO::root::procrast_mod.py::60::login successful
+2020-06-30 10:45:10,407::DEBUG::root::procrast_mod.py::104::/cont
+2020-06-30 10:51:36,568::DEBUG::root::procrast_mod.py::265::---END---

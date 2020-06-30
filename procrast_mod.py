@@ -1,4 +1,4 @@
-#version 2.6.1
+#version 2.6.2
 import time
 import datetime
 import webbrowser
@@ -81,6 +81,8 @@ else:
                 time.sleep(0.1)
                 print("/todo - create and manage a todo list")
                 time.sleep(0.1)
+                print("/calc - to open a web calculator")
+                time.sleep(0.1)
                 print("/man - to view the manual")
                 '''time.sleep(0.1)
                 print("/log - to view the distraction log")'''
@@ -93,7 +95,7 @@ else:
                 avoid=pro=br=br_total=br_timez=pomo_count=0
                 ch = '/begin'
                 print("start time =",now)
-                while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/log' or ch=='/pomodoro' or ch=='/sound' or ch=='/todo':
+                while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/log' or ch=='/pomodoro' or ch=='/sound' or ch=='/todo' or ch=='/calc':
                     print("Did you find your mind wander off?")
                     pro_check = input()
                     if pro_check == 'y' or pro_check == 'Y':
@@ -243,6 +245,17 @@ else:
                                     for i in todo:
                                         print(i)
                                     td=input("do you want to continue? ")                                
+                        elif ch=='/calc':
+                            print("1. scientific calculator 2. graphical calculator") 
+                            calc_type=int(input())
+                            if calc_type ==1:
+                                webbrowser.open_new("https://www.desmos.com/scientific")
+                            elif calc_type==2:
+                                webbrowser.open_new("https://www.desmos.com/calculator")
+                            else:
+                                logging.debug("invalid calc type choice")
+                                print("ERROR CODE : 0.0.3 | Refer the manual for debug")
+                                
                     elif pro==0 and avoid==0:
                         logging.error("0.0.1")
                         er_0_0_1=1                        
