@@ -1,4 +1,4 @@
-#version 2.6.3
+#version 2.6.4
 import time
 import datetime
 import webbrowser
@@ -51,6 +51,7 @@ else:
         usr_pass=getpass.getpass("enter password : ")      
         li.append(usr_pass)
         for row in csv_reader:
+            er_0_0_1+=1
             if li == row:
                 time.sleep(1)
                 logging.info("|USER|")
@@ -93,7 +94,7 @@ else:
                 pro_check=='n'
                 now=datetime.datetime.now()
                 dist_timings=break_timings=[]
-                avoid=pro=br=br_total=br_timez=pomo_count=calc=0
+                avoid=pro=br=br_total=br_timez=pomo_count=calc=deauth=0
                 ch = '/begin'
                 print("start time =",now)
                 while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/log' or ch=='/pomodoro' or ch=='/sound' or ch=='/todo' or ch=='/calc' or ch=='/credit':
@@ -101,6 +102,7 @@ else:
                     pro_check = input()
                     if pro_check == 'y' or pro_check == 'Y':
                         pro += 1
+                        deauth+=1
                         td=='y'
                         logging.debug("/cont")
                         dist_timings.append(datetime.datetime.now())
@@ -175,6 +177,7 @@ else:
                             print("1. assassin's creed iv black flag")
                             print("2. assassin's creed ii")
                             print("3. assassin's creed odyssey")
+                            print("4. best of mozart")
                             vid_choice=int(input("select = "))
                             if vid_choice == 1:
                                 logging.debug("vid_choice = 1")
@@ -185,8 +188,11 @@ else:
                             elif vid_choice == 3:
                                 logging.debug("vid_choice = 3")
                                 webbrowser.open_new("https://www.youtube.com/watch?v=fwthw9Sy_RU")
-                            #miserere mei deus            
                             elif vid_choice == 4:
+                                logging.debug("vid_choice =4")
+                                webbrowser.open_new("https://www.youtube.com/watch?v=Rb0UmrCXxVA")                           
+                            #miserere mei deus            
+                            elif vid_choice == 5:
                                 print("are you sure you want to continue? y/n")
                                 #easter egg                                
                                 ee=input()
@@ -264,11 +270,11 @@ else:
                             logging.debug("/credit")
                             pro-=1                            
                             print()
-                            print("the code in its entirety was written by frroossst (me)")
+                            print("the code in its entirety was written by frroossst (me) | frroossst@protonmail.com |")
                             print()
-                            print("the /calc function utilizes an online web application ie https://www.desmos.com")
+                            print("the '/calc' function utilizes an online web application ie https://www.desmos.com/")
                             print()
-                            print("/sound funcition utilizes the https://www.youtube.com website for playing videos")
+                            print("'/sound' funcition utilizes the https://www.youtube.com/ website for playing videos")
                             print()     
                     elif pro==0 and avoid==0:
                         logging.error("0.0.1")
@@ -291,10 +297,13 @@ else:
                         print('end time = ',later)
                         er_0_0_4=1       
                         ch = 'n'
-        else:
-            if pro_check!='n' or pro_check !='N' and er_0_0_1==0 and er_0_0_4!=1:
+                else:
+                    break
+            elif pro_check!='n' or pro_check !='N' and er_0_0_1==0 and er_0_0_4!=1:
                 logging.critical("authentication failure")
                 print("ERROR CODE : 0.0.4 | Refer the manual for debug")
+            elif ch=='/end':
+                ch='n'
                 #version naming scheme
                 #x.y.z 
                 #x= major changes
