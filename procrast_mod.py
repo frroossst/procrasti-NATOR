@@ -1,4 +1,4 @@
-#version 2.6.4
+#version 2.6.5
 import time
 import datetime
 import webbrowser
@@ -42,6 +42,7 @@ if usrin == 'y' or usrin == 'Y':
             window.deiconify()
             window.destroy()
             window.quit()
+            f.close()
             break
 else:
     with open("/home/home/Desktop/flow_state/cred.csv","r") as f:
@@ -283,6 +284,7 @@ else:
                         print("ERROR CODE : 0.0.1 | Refer the manual for debug")
                         break
                     else:
+                        #add achievements and points
                         logging.debug("---END---")
                         print('here is a breakdown of your session',usr_cred)
                         print('total distractions = ', pro)
@@ -295,6 +297,7 @@ else:
                         print('total number of times you used calculator = ',calc)      
                         later=datetime.datetime.now()
                         print('end time = ',later)
+                        f.close()
                         er_0_0_4=1       
                         ch = 'n'
                 else:
