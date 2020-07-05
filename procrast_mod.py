@@ -1,4 +1,4 @@
-#version 2.6.5
+#version 2.7.0
 import time
 import datetime
 import webbrowser
@@ -88,6 +88,8 @@ else:
                 print("/man - to view the manual")
                 time.sleep(0.1)
                 print("/credit - to  view appropriate credits")
+                time.sleep(0.1)
+                print("/dopamine - check dopamine levels")
                 '''print("/log - to view the distraction log")'''
                 time.sleep(0.1)
                 print("/break - to take a break")
@@ -95,7 +97,7 @@ else:
                 pro_check=='n'
                 now=datetime.datetime.now()
                 dist_timings=break_timings=[]
-                avoid=pro=br=br_total=br_timez=pomo_count=calc=deauth=0
+                avoid=pro=br=br_total=br_timez=pomo_count=calc=deauth=dope=achv=0
                 ch = '/begin'
                 print("start time =",now)
                 while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/log' or ch=='/pomodoro' or ch=='/sound' or ch=='/todo' or ch=='/calc' or ch=='/credit':
@@ -113,6 +115,8 @@ else:
                             logging.debug("/avoid")
                             avoid+=1
                             print("Total number of avoidable distraction =",avoid,"of",pro)
+                            with open(usr_cred,"a") as pts:
+                                    pts.write("-10 \n")
                         elif ch == '/man':
                             pro-=1
                             man=open("/home/home/Desktop/flow_state/manual.html","r")
@@ -143,35 +147,37 @@ else:
                                 br_total+=br_time 
                                 logging.debug("break end")
                         elif ch == '/pomodoro':
-                            logging.debug("pomodoro start")
-                            pro-=1
-                            print("\n 1. standard timer \n 2. custom timer")
-                            type_pomo=int(input())
-                            if type_pomo == 1:
-                                print("pomodoro set for 25 minutes")
-                                pomo_count+=1
-                                pomo_timer=25*60            
-                                time.sleep(pomo_timer)
-                                logging.debug("pomodoro end")
-                                print("pomodoro session completed")
-                                if pomo_count%4 == 0:
-                                    print()
-                                    logging.debug("one pomodoro set completed")
-                                    print("pomodoro sessions completed = ",pomo_count)
-                                    print("you deserve a break") 
-                            #custom pomodoro timer block             
-                            elif type_pomo == 2:
-                                logging.debug("custom pomodoro started")
-                                custom_timer=int(input("Enter custom time : "))
-                                pomo_count+=1
-                                custom_timer=custom_timer*60
-                                time.sleep(custom_timer)
-                                logging.debug("custom pomodoro end")
-                                if pomo_count%4 == 0:
-                                    print()
-                                    logging.debug("one pomodoro set completed")
-                                    print("pomodoro sessions completed = ",pomo_count)
-                                    print("you deserve a break") 
+                            with open(usr_cred,"a") as pts:
+                                pts.write("10 \n")
+                                logging.debug("pomodoro start")
+                                pro-=1
+                                print("\n 1. standard timer \n 2. custom timer")
+                                type_pomo=int(input())
+                                if type_pomo == 1:
+                                    print("pomodoro set for 25 minutes")
+                                    pomo_count+=1
+                                    pomo_timer=25*60            
+                                    time.sleep(pomo_timer)
+                                    logging.debug("pomodoro end")
+                                    print("pomodoro session completed")
+                                    if pomo_count%4 == 0:
+                                        print()
+                                        logging.debug("one pomodoro set completed")
+                                        print("pomodoro sessions completed = ",pomo_count)
+                                        print("you deserve a break") 
+                                #custom pomodoro timer block             
+                                elif type_pomo == 2:
+                                    logging.debug("custom pomodoro started")
+                                    custom_timer=int(input("Enter custom time : "))
+                                    pomo_count+=1
+                                    custom_timer=custom_timer*60
+                                    time.sleep(custom_timer)
+                                    logging.debug("custom pomodoro end")
+                                    if pomo_count%4 == 0:
+                                        print()
+                                        logging.debug("one pomodoro set completed")
+                                        print("pomodoro sessions completed = ",pomo_count)
+                                        print("you deserve a break") 
                         elif ch == '/sound':
                             logging.debug("/sound")            
                             pro-=1
@@ -183,15 +189,23 @@ else:
                             if vid_choice == 1:
                                 logging.debug("vid_choice = 1")
                                 webbrowser.open_new("https://www.youtube.com/watch?v=JYVMnLUZu9Y&t=1320s")
+                                with open(usr_cred,"a") as pts:
+                                    pts.write("10 \n")
                             elif vid_choice == 2:
                                 logging.debug("vid_choice = 2")
                                 webbrowser.open_new("https://www.youtube.com/watch?v=iriiZOeInDg&t=5415s")
+                                with open(usr_cred,"a") as pts:
+                                    pts.write("10 \n")
                             elif vid_choice == 3:
                                 logging.debug("vid_choice = 3")
                                 webbrowser.open_new("https://www.youtube.com/watch?v=fwthw9Sy_RU")
+                                with open(usr_cred,"a") as pts:
+                                    pts.write("10 \n")
                             elif vid_choice == 4:
                                 logging.debug("vid_choice =4")
-                                webbrowser.open_new("https://www.youtube.com/watch?v=Rb0UmrCXxVA")                           
+                                webbrowser.open_new("https://www.youtube.com/watch?v=Rb0UmrCXxVA")            
+                                with open(usr_cred,"a") as pts:
+                                    pts.write("10 \n")              
                             #miserere mei deus            
                             elif vid_choice == 5:
                                 print("are you sure you want to continue? y/n")
@@ -199,7 +213,9 @@ else:
                                 ee=input()
                                 if ee == 'n' or 'N':
                                     logging.info("---miserere mei deus---")
-                                    webbrowser.open_new("https://www.youtube.com/watch?v=36Y_ztEW1NE")
+                                    webbrowser.open_new("https://www.youtube.com/watch?v=36Y_ztEW1NE")  
+                                    with open(usr_cred,"a") as pts:
+                                        pts.write("100 \n")
                             else:
                                 logging.debug("invalid video choice")
                                 print("ERROR CODE : 0.0.3 | Refer the manual for debug")           
@@ -246,6 +262,8 @@ else:
                                             print(todo)
                                             print()
                                             logging.debug("element removed from the list")
+                                            with open(usr_cred,"a") as pts:
+                                                pts.write("10 \n")
                                             td=input("do you want to continue? ")
                                 elif ch_td==3:
                                     logging.debug("list printed")
@@ -261,9 +279,13 @@ else:
                             if calc_type ==1:
                                 logging.debug("scientific calc")
                                 webbrowser.open_new("https://www.desmos.com/scientific")
+                                with open(usr_cred,"a") as pts:
+                                    pts.write("10 \n")
                             elif calc_type==2:
                                 logging.debug("graphing calc")
                                 webbrowser.open_new("https://www.desmos.com/calculator")
+                                with open(usr_cred,"a") as pts:
+                                    pts.write("10 \n")
                             else:
                                 logging.debug("invalid calc type choice")
                                 print("ERROR CODE : 0.0.3 | Refer the manual for debug")
@@ -277,6 +299,15 @@ else:
                             print()
                             print("'/sound' funcition utilizes the https://www.youtube.com/ website for playing videos")
                             print()     
+                        elif ch=='/dopamine':
+                            logging.debug("/dopamine")
+                            pro-=1
+                            with open(usr_cred,"r") as pts:
+                                content=pts.readlines()
+                                for i in content:
+                                    achv=int(i)
+                                    dope=dope+achv
+                                print(dope,"nanograms of dopamine accumilated")
                     elif pro==0 and avoid==0:
                         logging.error("0.0.1")
                         er_0_0_1=1                        
