@@ -1270,3 +1270,136 @@
 2020-07-05 13:07:01,698::DEBUG::root::procrast_mod.py::280::scientific calc
 2020-07-05 13:07:07,762::DEBUG::root::procrast_mod.py::110::/cont
 2020-07-05 13:07:10,546::DEBUG::root::procrast_mod.py::303::/dopamine
+2020-07-08 12:52:53,227::INFO::root::procrast_mod.py::16::***---INIT---***
+2020-07-08 12:52:53,227::INFO::root::procrast_mod.py::17::posix
+2020-07-08 12:52:53,227::INFO::root::procrast_mod.py::18::/home/home/Desktop/flow_state
+2020-07-08 12:52:53,227::DEBUG::root::procrast_mod.py::25::---START---
+2020-07-08 12:52:59,279::INFO::root::procrast_mod.py::58::|USER|
+2020-07-08 12:52:59,279::INFO::root::procrast_mod.py::59::root
+2020-07-08 12:53:00,530::INFO::root::procrast_mod.py::62::login successful
+2020-07-08 12:53:04,525::DEBUG::root::procrast_mod.py::110::/cont
+2020-07-08 12:53:08,309::DEBUG::root::procrast_mod.py::223::/todo
+2020-07-08 12:53:12,093::DEBUG::root::procrast_mod.py::239::element added to list
+2020-07-08 12:53:22,732::DEBUG::root::procrast_mod.py::239::element added to list
+2020-07-08 12:53:28,404::DEBUG::root::procrast_mod.py::266::element removed from the list
+2020-07-08 12:53:37,691::DEBUG::root::procrast_mod.py::266::element removed from the list
+2020-07-08 12:53:43,459::ERROR::root::procrast_mod.py::314::0.0.1
+2020-07-08 12:53:47,746::INFO::root::procrast_mod.py::16::***---INIT---***
+2020-07-08 12:53:47,746::INFO::root::procrast_mod.py::17::posix
+2020-07-08 12:53:47,746::INFO::root::procrast_mod.py::18::/home/home/Desktop/flow_state
+2020-07-08 12:53:47,746::DEBUG::root::procrast_mod.py::25::---START---
+2020-07-08 12:53:52,732::INFO::root::procrast_mod.py::58::|USER|
+2020-07-08 12:53:52,732::INFO::root::procrast_mod.py::59::root
+2020-07-08 12:53:53,984::INFO::root::procrast_mod.py::62::login successful
+2020-07-08 12:53:59,114::DEBUG::root::procrast_mod.py::110::/cont
+2020-07-08 12:54:01,331::DEBUG::root::procrast_mod.py::305::/dopamine
+2020-07-08 12:57:15,396::INFO::root::procrast_mod.py::16::***---INIT---***
+2020-07-08 12:57:15,396::INFO::root::procrast_mod.py::17::posix
+2020-07-08 12:57:15,396::INFO::root::procrast_mod.py::18::/home/home/Desktop/flow_state
+2020-07-08 12:57:15,396::DEBUG::root::procrast_mod.py::25::---START---
+2020-07-08 12:57:20,599::INFO::root::procrast_mod.py::58::|USER|
+2020-07-08 12:57:20,599::INFO::root::procrast_mod.py::59::root
+2020-07-08 12:57:21,851::INFO::root::procrast_mod.py::62::login successful
+2020-07-08 12:57:25,742::DEBUG::root::procrast_mod.py::110::/cont
+2020-07-08 12:57:28,790::DEBUG::root::procrast_mod.py::307::/dopamine
+2020-07-08 14:26:40,879::INFO::root::procrast_mod.py::16::***---INIT---***
+2020-07-08 14:26:40,880::INFO::root::procrast_mod.py::17::posix
+2020-07-08 14:26:40,880::INFO::root::procrast_mod.py::18::/home/home/Desktop/flow_state
+2020-07-08 14:26:40,880::DEBUG::root::procrast_mod.py::25::---START---
+2020-07-08 14:26:47,661::INFO::root::procrast_mod.py::58::|USER|
+2020-07-08 14:26:47,662::INFO::root::procrast_mod.py::59::frroossst
+2020-07-08 14:26:48,913::INFO::root::procrast_mod.py::62::login successful
+2020-07-08 15:58:39,473::INFO::root::procrast_mod.py::16::***---INIT---***
+2020-07-08 15:58:39,473::INFO::root::procrast_mod.py::17::posix
+2020-07-08 15:58:39,474::INFO::root::procrast_mod.py::18::/home/home/Desktop/flow_state
+2020-07-08 15:58:39,474::DEBUG::root::procrast_mod.py::25::---START---
+2020-07-08 15:58:47,446::INFO::root::procrast_mod.py::58::|USER|
+2020-07-08 15:58:47,446::INFO::root::procrast_mod.py::59::frroossst
+2020-07-08 15:58:48,698::INFO::root::procrast_mod.py::62::login successful
+2020-07-08 16:34:22,943::DEBUG::root::procrast_mod.py::110::/cont
+2020-07-08 17:04:49,258::DEBUG::root::procrast_mod.py::110::/cont
+2020-07-08 17:04:51,857::DEBUG::root::procrast_mod.py::115::/avoid
+2020-07-08 18:47:53,813::DEBUG::root::procrast_mod.py::110::/cont
+2020-07-08 18:47:56,473::DEBUG::root::procrast_mod.py::115::/avoid
+2020-07-09 15:01:33,731::INFO::root::procrast_mod.py::16::***---INIT---***
+2020-07-09 15:01:33,731::INFO::root::procrast_mod.py::17::posix
+2020-07-09 15:01:33,731::INFO::root::procrast_mod.py::18::/home/home/Desktop/flow_state
+2020-07-09 15:01:33,731::DEBUG::root::procrast_mod.py::25::---START---
+2020-07-09 15:01:44,927::INFO::root::procrast_mod.py::16::***---INIT---***
+2020-07-09 15:01:44,927::INFO::root::procrast_mod.py::17::posix
+2020-07-09 15:01:44,927::INFO::root::procrast_mod.py::18::/home/home/Desktop/flow_state
+2020-07-09 15:01:44,927::DEBUG::root::procrast_mod.py::25::---START---
+2020-07-09 15:01:56,395::INFO::root::procrast_mod.py::58::|USER|
+2020-07-09 15:01:56,395::INFO::root::procrast_mod.py::59::frroossst
+2020-07-09 15:01:57,647::INFO::root::procrast_mod.py::62::login successful
+2020-07-09 16:01:48,069::DEBUG::root::procrast_mod.py::110::/cont
+2020-07-09 16:01:50,157::DEBUG::root::procrast_mod.py::115::/avoid
+2020-07-09 18:49:29,389::INFO::root::procrast_mod.py::16::***---INIT---***
+2020-07-09 18:49:29,389::INFO::root::procrast_mod.py::17::posix
+2020-07-09 18:49:29,389::INFO::root::procrast_mod.py::18::/home/home/Desktop/flow_state
+2020-07-09 18:49:29,389::DEBUG::root::procrast_mod.py::25::---START---
+2020-07-09 18:49:34,690::INFO::root::procrast_mod.py::58::|USER|
+2020-07-09 18:49:34,690::INFO::root::procrast_mod.py::59::root
+2020-07-09 18:49:35,942::INFO::root::procrast_mod.py::62::login successful
+2020-07-09 18:49:41,475::DEBUG::root::procrast_mod.py::110::/cont
+2020-07-09 21:22:04,944::INFO::root::procrast_mod.py::16::***---INIT---***
+2020-07-09 21:22:04,944::INFO::root::procrast_mod.py::17::posix
+2020-07-09 21:22:04,944::INFO::root::procrast_mod.py::18::/home/home/Desktop/flow_state
+2020-07-09 21:22:04,945::DEBUG::root::procrast_mod.py::25::---START---
+2020-07-09 21:22:08,908::INFO::root::procrast_mod.py::58::|USER|
+2020-07-09 21:22:08,908::INFO::root::procrast_mod.py::59::root
+2020-07-09 21:22:10,159::INFO::root::procrast_mod.py::62::login successful
+2020-07-09 21:22:17,586::DEBUG::root::procrast_mod.py::110::/cont
+2020-07-09 21:23:53,326::INFO::root::procrast_mod.py::16::***---INIT---***
+2020-07-09 21:23:53,326::INFO::root::procrast_mod.py::17::posix
+2020-07-09 21:23:53,326::INFO::root::procrast_mod.py::18::/home/home/Desktop/flow_state
+2020-07-09 21:23:53,326::DEBUG::root::procrast_mod.py::25::---START---
+2020-07-09 21:23:58,183::INFO::root::procrast_mod.py::58::|USER|
+2020-07-09 21:23:58,183::INFO::root::procrast_mod.py::59::root
+2020-07-09 21:23:59,434::INFO::root::procrast_mod.py::62::login successful
+2020-07-09 21:24:03,326::DEBUG::root::procrast_mod.py::110::/cont
+2020-07-09 21:24:06,679::INFO::root::procrast_mod.py::16::***---INIT---***
+2020-07-09 21:24:06,679::INFO::root::procrast_mod.py::17::posix
+2020-07-09 21:24:06,679::INFO::root::procrast_mod.py::18::/home/home/Desktop/flow_state
+2020-07-09 21:24:06,679::DEBUG::root::procrast_mod.py::25::---START---
+2020-07-09 21:24:12,319::INFO::root::procrast_mod.py::58::|USER|
+2020-07-09 21:24:12,319::INFO::root::procrast_mod.py::59::root
+2020-07-09 21:24:13,570::INFO::root::procrast_mod.py::62::login successful
+2020-07-09 21:24:29,191::DEBUG::root::procrast_mod.py::110::/cont
+2020-07-09 21:24:32,831::DEBUG::root::procrast_mod.py::110::/cont
+2020-07-09 21:24:35,327::DEBUG::root::procrast_mod.py::307::/dopamine
+2020-07-09 21:25:03,832::INFO::root::procrast_mod.py::16::***---INIT---***
+2020-07-09 21:25:03,832::INFO::root::procrast_mod.py::17::posix
+2020-07-09 21:25:03,832::INFO::root::procrast_mod.py::18::/home/home/Desktop/flow_state
+2020-07-09 21:25:03,832::DEBUG::root::procrast_mod.py::25::---START---
+2020-07-09 21:25:10,673::INFO::root::procrast_mod.py::58::|USER|
+2020-07-09 21:25:10,674::INFO::root::procrast_mod.py::59::frroossst
+2020-07-09 21:25:11,925::INFO::root::procrast_mod.py::62::login successful
+2020-07-09 21:25:15,560::DEBUG::root::procrast_mod.py::110::/cont
+2020-07-09 21:25:18,449::DEBUG::root::procrast_mod.py::307::/dopamine
+2020-07-09 21:25:20,705::INFO::root::procrast_mod.py::16::***---INIT---***
+2020-07-09 21:25:20,705::INFO::root::procrast_mod.py::17::posix
+2020-07-09 21:25:20,705::INFO::root::procrast_mod.py::18::/home/home/Desktop/flow_state
+2020-07-09 21:25:20,705::DEBUG::root::procrast_mod.py::25::---START---
+2020-07-09 21:25:33,738::INFO::root::procrast_mod.py::58::|USER|
+2020-07-09 21:25:33,738::INFO::root::procrast_mod.py::59::root
+2020-07-09 21:25:34,990::INFO::root::procrast_mod.py::62::login successful
+2020-07-09 21:26:15,506::ERROR::root::procrast_mod.py::316::0.0.1
+2020-07-10 10:02:18,898::INFO::root::procrast_mod.py::16::***---INIT---***
+2020-07-10 10:02:18,898::INFO::root::procrast_mod.py::17::posix
+2020-07-10 10:02:18,898::INFO::root::procrast_mod.py::18::/home/home/Desktop/flow_state
+2020-07-10 10:02:18,898::DEBUG::root::procrast_mod.py::25::---START---
+2020-07-10 10:02:26,990::INFO::root::procrast_mod.py::58::|USER|
+2020-07-10 10:02:26,990::INFO::root::procrast_mod.py::59::root
+2020-07-10 10:02:28,242::INFO::root::procrast_mod.py::62::login successful
+2020-07-10 10:02:32,711::DEBUG::root::procrast_mod.py::110::/cont
+2020-07-10 10:02:34,759::DEBUG::root::procrast_mod.py::316::/reset
+2020-07-10 10:05:02,717::INFO::root::procrast_mod.py::16::***---INIT---***
+2020-07-10 10:05:02,717::INFO::root::procrast_mod.py::17::posix
+2020-07-10 10:05:02,717::INFO::root::procrast_mod.py::18::/home/home/Desktop/flow_state
+2020-07-10 10:05:02,718::DEBUG::root::procrast_mod.py::25::---START---
+2020-07-10 10:05:11,336::INFO::root::procrast_mod.py::58::|USER|
+2020-07-10 10:05:11,336::INFO::root::procrast_mod.py::59::root
+2020-07-10 10:05:12,587::INFO::root::procrast_mod.py::62::login successful
+2020-07-10 10:05:33,885::DEBUG::root::procrast_mod.py::112::/cont
+2020-07-10 10:05:36,596::DEBUG::root::procrast_mod.py::319::/detox

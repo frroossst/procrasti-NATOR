@@ -1,4 +1,4 @@
-#version 2.7.0
+#version 2.7.1
 import time
 import datetime
 import webbrowser
@@ -91,6 +91,8 @@ else:
                 time.sleep(0.1)
                 print("/dopamine - check dopamine levels")
                 '''print("/log - to view the distraction log")'''
+                time.sleep(0.1)
+                print("/detox - to clear reward logs")
                 time.sleep(0.1)
                 print("/break - to take a break")
                 time.sleep(0.5)
@@ -238,6 +240,8 @@ else:
                                     print()
                                     logging.debug("element added to list")
                                     td=input("do you want to continue? ")
+                                    with open(usr_cred,"a") as pts:
+                                        pts.write("5 \n")
                                 elif ch_td ==2:
                                     strk=int(input("which item do you want to remove? "))
                                     len_todo=len(todo)
@@ -298,7 +302,9 @@ else:
                             print("the '/calc' function utilizes an online web application ie https://www.desmos.com/")
                             print()
                             print("'/sound' funcition utilizes the https://www.youtube.com/ website for playing videos")
-                            print()     
+                            print()    
+                            print("the amount of dopamine accumulated does not represent actual amount of dopomine it is just a reward system")
+                            print()
                         elif ch=='/dopamine':
                             logging.debug("/dopamine")
                             pro-=1
@@ -307,7 +313,12 @@ else:
                                 for i in content:
                                     achv=int(i)
                                     dope=dope+achv
-                                print(dope,"nanograms of dopamine accumilated")
+                                print(dope,"nanograms of dopamine accumulated *")
+                        elif ch=='/detox':
+                            pro-=1
+                            logging.debug("/detox")
+                            with open(usr_cred,"w") as rf:
+                                rf.write("0")
                     elif pro==0 and avoid==0:
                         logging.error("0.0.1")
                         er_0_0_1=1                        
