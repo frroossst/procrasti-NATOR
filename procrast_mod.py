@@ -12,7 +12,7 @@ from tkinter import messagebox
 #filemode='w' for overwriting and erase for continued logs
 log_format = "%(asctime)s::%(levelname)s::%(name)s::"\
 "%(filename)s::%(lineno)d::%(message)s"
-logging.basicConfig(filename='/home/home/Desktop/flow_state/logfile.log' , level='DEBUG', format=log_format)
+logging.basicConfig(filename='logfile.log' , level='DEBUG', format=log_format)
 logging.info("***---INIT---***")
 logging.info(os.name)
 logging.info(os.getcwd())
