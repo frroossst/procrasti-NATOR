@@ -1,4 +1,4 @@
-#version 2.7.1
+#version 2.7.2
 import time
 import datetime
 import webbrowser
@@ -95,6 +95,8 @@ else:
                 print("/detox - to clear reward logs")
                 time.sleep(0.1)
                 print("/break - to take a break")
+                time.sleep(0.1)
+                print("/timer - set a custom timer")
                 time.sleep(0.5)
                 pro_check=='n'
                 now=datetime.datetime.now()
@@ -102,7 +104,7 @@ else:
                 avoid=pro=br=br_total=br_timez=pomo_count=calc=deauth=dope=achv=0
                 ch = '/begin'
                 print("start time =",now)
-                while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/log' or ch=='/pomodoro' or ch=='/sound' or ch=='/todo' or ch=='/calc' or ch=='/credit':
+                while ch == '/begin' or ch == '/cont' or ch=='/avoid' or ch=='/break' or ch =='/log' or ch=='/pomodoro' or ch=='/sound' or ch=='/todo' or ch=='/calc' or ch=='/credit' or ch=='/timer':
                     print("Did you find your mind wander off?")
                     pro_check = input()
                     if pro_check == 'y' or pro_check == 'Y':
@@ -293,6 +295,18 @@ else:
                             else:
                                 logging.debug("invalid calc type choice")
                                 print("ERROR CODE : 0.0.3 | Refer the manual for debug")
+                        elif ch=='/timer':
+                            logging.debug("/timer")
+                            x=0
+                            x=int(input("enter time : "))
+                            x=x*60
+                            print()
+                            print("timer has started")
+                            logging.debug("timer started")
+                            time.sleep(x)
+                            print()                            
+                            print("timer has ended")
+                            logging.debug("timer ended")
                         elif ch=='/credit':
                             logging.debug("/credit")
                             pro-=1                            
